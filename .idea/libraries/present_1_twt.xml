@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="present_1_twt">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/special/assets/present_1_twt/sakurasou_twtbg1.zip!/" />
+      <root url="jar://$PROJECT_DIR$/special/assets/present_1_twt/sakurasou_twtic1.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

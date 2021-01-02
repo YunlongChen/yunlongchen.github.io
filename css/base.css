@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+/* Basic Structure ============================================================= */
+html,body{ height:100%; margin: 0; padding: 0; }
+img{max-width: 100%; height: auto; width: auto\9; /* ie8以下 */}
+p{ margin: 0 0 1em 0; }
+/* Font ======================================================== */
+/* font-color */
+body{ color: #3E1E14; }
+a,
+a:active,
+a:visited{ color: #FD74B8; }/*pink*/
+a:hover{ color: #E94630; }/*red*/
+.color1{ color:#F39800;}/*orange*/
+.color2{ color:#52C3F1;}/*blue*/
+.color3{}
+
+.dbrown{color:#3E1E14;}
+.brown{color:#998075;}
+.lbrown{color:#714F45;}
+.llbrown{color:#C4B1AA;}
+.pink{color:#E95098;}
+.purple{color:#B979B1;}
+.green{color:#AACD06;}
+.lblue{color:#52C3F1;}
+.red{color:#E94630;}
+.orange{color:#F39800;}
+.bgreen{color:#66CCCC;}
+.pblue{color:#6666CC;}
+.beige{color:#FBF8F0;}
+/* rem based fontsize <Firefox3.6+, Chrome, Safari5, IE9+ >*/
+/* IE7/8対策のために最初にpx指定してからrem指定する  */
+html{ font-size: 62.5%; line-height: 1;}
+body { font-size: 14px; font-size: 1.4rem; }
+h1{ font-size: 48px; font-size: 4.8rem; font-weight: bold; margin: 0; padding: 0; }
+h2{ font-size: 20px; font-size: 2.0rem; font-weight: bold; margin: 0; padding: 0; }
+h3{ font-size: 18px; font-size: 1.8rem; font-weight: bold; margin: 0; padding: 0; }
+h4{ font-size: 16px; font-size: 1.6rem; font-weight: bold; margin: 0; padding: 0; }
+h5{ font-size: 14px; font-size: 1.4rem; font-weight: bold; margin: 0; padding: 0; }
+h6{ font-size: 12px; font-size: 1.2rem; font-weight: bold; margin: 0; padding: 0; }
+.xsmall { font-size: 10px; font-size: 1.0rem; }
+.small { font-size: 11px; font-size: 1.1rem; }
+.medium { font-size: 12px; font-size: 1.2rem; }
+.regular { font-size: 14px; font-size: 1.4rem; }
+.large { font-size: 16px; font-size: 1.6rem; }
+.xlarge { font-size: 18px; font-size: 1.8rem; }
+.xxlarge { font-size: 24px; font-size: 2.4rem; }
+.clearsize{}
+/* font-face */
+body, textarea { font-family: "メイリオ", "ＭＳ Ｐゴシック", sans-serif; }
+input, select { font-family: Arial, "ＭＳ Ｐゴシック", sans-serif; }
+/* Reusable classes ========================================================= */
+/* frame */
+.frame1{ border: #F9F5EA solid 4px; padding: 2%; }
+.frame2{ border: #F9F5EA solid 4px; padding: 2%; }
+.frame_dotted1{ border: #C4B1AA dotted 1px; }
+/* table */
+.table1{ border-collapse: collapse; border: #714F45 solid 1px; color:#714F45; }
+.table1 tr{ border-bottom: #714F45 dotted 1px;}
+.table1 th{ font-size: 90%; padding: 5px; }
+.table1 td{ color:#4a3a35; padding: 5px;}
+.table1 th{ font-weight: bold;}
+
+.table2{border: #DBC7A8 dotted 1px; margin-bottom: 1em;}
+.table2 th{ padding: 0.5em 0.4em; border-bottom: #DBC7A8 dotted 1px;  border-right: #DBC7A8 dotted 1px; white-space: nowrap; }
+.table2 td{ padding: 0.5em 0.4em; border-bottom: #DBC7A8 dotted 1px; }
+
+.table3{border-top: #DBC7A8 dotted 1px; margin-bottom: 1em;}
+.table3 th{ padding: 0.5em 0.4em; border-bottom: #DBC7A8 dotted 1px; white-space: nowrap; }
+.table3 td{ padding: 0.5em 0.4em; border-bottom: #DBC7A8 dotted 1px; }
+/* list */
+.list1{ list-style-type: none; display: block; margin: 0 auto; padding: 2% 0 0 0; background-image:url(../images/common/line_brownSolid.png); background-repeat: no-repeat; background-position: left top; }
+.list1 li{ display: block;  margin: 0 0 2% 0; padding: 0 0 2% 0; line-height: 1.2; background-image:url(../images/common/line_brownSolid.png); background-repeat: no-repeat; background-position: left bottom;  }
+.list2{ list-style-type: none; display: block; margin: 0 auto; padding: 2% 0 0 0; border-top: #714F45 dotted 1px; }
+.list2 li{ display: block;  margin: 0 0 2% 0; padding: 0 0 2% 0; line-height: 1.2; border-bottom: #714F45 dotted 1px; }
+
+.iblock1{padding: 1%; border: #C4B1AA solid 1px; display:inline-block; /display:inline; /zoom:1;}
+
+
+/* IE hack < http://www.positioniseverything.net/articles/cc-plus.html > */
+#ltie8{}/*IE8未満*/
+#ltie7{}/*IE7未満*/
+/**** .clm inline blockによる横並びカラム構成のテンプレート。 ****/
+ul.clm{ letter-spacing:-1em;}
+ul.clm li{ width:100px; display:inline-block; /display:inline; /zoom:1; letter-spacing:normal;}
+ul.clm li > div{ width:100px; display:block;}
+
+/* Utility classes ============================================================ */
+/* Left & Right alignment */
+.left{ float: left; }
+.right{ float: right; }
+.pcLeft{ float: left; }
+.pcRight{ float: right; }
+/* padding */
+.inside { padding: 3%; }
+.inside_thin { padding: 1%; }
+/* margin */
+.l10{margin-left:10px;}
+.r10{margin-right:10px;}
+.t10{margin-top:10px;}
+.b10{margin-bottom:10px;}
+/* button */
+.cssbutton{ margin-bottom: 0.4em; padding: 0.5em 0.8em; font-size: 0.8em; background-color: #FBA0C1; color: #FFF; font-weight: bold; text-decoration: none; display:inline-block; /display:inline; /zoom:1; letter-spacing:normal; -moz-border-radius: 0.5em; border-radius: 0.5em; behavior: url(/lib/PIE.htc);/*for IE*/}
+.cssbutton:hover{  color: #FFF; background-color: #FD74B8;}
+/* The fraction classes are useful for column lists */
+.half, .third, .quarter, .fifth, .sixth{ width: 100%; display: block; list-style-type: none; margin: 0; padding: 0; /zoom:1; }
+.half:after, .third:after, .quarter:after, .fifth:after, .sixth:after{content: ""; display: block; clear: both;}
+.half li, .third li, .quarter li, .fifth li, .sixth li{ display: block; margin: 0; padding: 0; float: left; }
+.half li{ padding-right: 5%; width: 45% }
+.third li{ padding-right: 5%; width: 28.3% }
+.quarter li{ padding-right: 5%; width: 20% }
+.fifth li{ padding-right: 5%; width: 15% }
+
+.pcHalf{ display: block; list-style-type: none; margin: 0; padding: 0; /zoom:1;}
+.pcHalf:after{content: ""; display: block; clear: both;}
+.pcHalf li { width:48%; margin: 0; padding: 1%; display:block; float: left; }
+
+.pcFullblock{ width:98%; margin: 0; padding: 1%; display:inline-block; /display:inline; /zoom:1; letter-spacing:normal;}
+.pcHalfblock{ width:47%; margin: 0; padding: 1%; display:inline-block; vertical-align: top; /display:inline; /zoom:1; letter-spacing:normal;}
+
+.pcTable{}
+.pcTable th{ white-space: nowrap; }
+.pcTable th, .pcTable td{ text-align: left; vertical-align: top;}
+/* For when a <br /> just ain't enough */
+.separator{clear: both;float: left;height: 1px;width: 100%; }
+/*.clearFix (NN,IE6未満非対応) */
+.clearfix {/zoom:1;}
+.clearfix:after{content: ""; display: block; clear: both;}
+.clearb{ clear:both; }
+
+/* Smartphone(Landscape) ============================================================== */
+@media screen and (max-width: 480px) {
+.pcLeft{ float: none; }
+.pcRight{ float: none; }
+.pcHalf li { width:98%; float: none; }
+.pcHalfblock{ width:98%; }
+.pcTable{ display: block;}
+.pcTable tr,
+.pcTable th,
+.pcTable td{ display: block;}
+}

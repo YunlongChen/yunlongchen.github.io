@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="Keywords" content="さくら荘のペットな彼女,さくら荘,鴨志田一,溝口ケージ,神田空田,椎名ましろ,青山七海,上井草美咲,メイドちゃん,三鷹仁,赤坂龍之介,電撃文庫,電撃,アニメ" />
+<meta name="description" content="『さくら荘のペットな彼女』アニメ公式サイト。変人と天才と凡人が織りなす、青春学園ラブコメ テレビアニメ化決定！アニメ版の最新情報はこちらでチェック！" />
+<title>『さくら荘のペットな彼女』アニメ公式サイト</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=2.0">
+<link rel="stylesheet" href="./css/top.css" type="text/css" media="screen">
+<!--[if IE]><script type="text/javascript" src="./js/html5.js"></script><![endif]-->
+<script type="text/javascript" src="./lib/jquery-1.7.2.min.js"></script>
+<!--[if lt IE 9]><script src="./lib/css3-mediaqueries.js"></script><![endif]-->
+<script type="text/javascript" src="./lib/twitter/blogger.js"></script>
+<script type="text/javascript" src="./lib/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="./lib/colorbox/jquery.colorbox-min.js"></script>
+<link rel="stylesheet" type="text/css" href="./lib/colorbox/colorbox.css" media="all" />
+<script type="text/javascript" src="./lib/jquery.marquee.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+	$('.pvcb').colorbox({iframe:true, innerWidth:680, innerHeight:400});//w40h40
+	$('.pvcb2').colorbox({iframe:true, innerWidth:960, innerHeight:558});//w40h40
+	$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:360});
+	$('#WhatsNew .container').load('/news/headline.js',null,function (){
+	//callback
+	});
+	var fadeTime=500;
+	if(!jQuery.support.opacity){
+	//IE8以下
+		fadeTime=0;
+	}
+	$('#Background .mainVisual img').fadeIn(fadeTime*4,function(){
+		$('#Background .bgPtn').fadeIn(fadeTime,function(){
+			//callback
+		});
+		$('header #OnAir img').fadeIn(fadeTime);
+	});
+});
+$(document).ready( function(){
+	$.getJSON('/twitter.php', function (json) {
+		twitterCallback2(json);
+		//console.log(json);
+	});
+});
+function twitterLoaded(){
+	$(".marquee").marquee({loop: -1});
+}
+</script>
+<style>
+#Background .mainVisual img,header #OnAir img,#Background .bgPtn{ display: none;}
+#Twitter .prof{ display: none;}
+</style>
+</head>
+<body id="Page_Top" class="col2">
+<!-- * background * -->
+<div id="Background" class="clearfix">
+	<div class="layer1">
+		<div class="bgPtn">&nbsp;</div>
+	</div>
+	<div class="layer2"><div class="frame_pri">
+		<div class="mainVisual"><img src="images/top/main2.png" alt="main"></div>
+	</div></div>
+</div>
+<!-- * /background * -->
+<!-- * foreground * -->
+<div id="Foreground">
+<!-- ** Twitter ** -->
+<div id="Twitter"><div class="frame_sec clearfix">
+	<h3><img src="images/top/twitter_ttl.png" alt="『さくら荘のペットな彼女』アニメ公式Twitter"></h3>
+	<div class="flwBtn"><a href="http://twitter.com/#!/sakurasou_tv" target="_blank" rel="noopener noreferrer"><img src="images/top/twitter_flwBtn.png" alt="Follow"></a></div>
+	<ul id="twitter_update_list" class="marquee">
+	<li>Twitterを読み込み中...</li>
+	</ul>
+</div></div>
+<!-- ** /Twitter ** -->
+<!-- ** header ** -->
+<header><div class="frame_sec clearfix">
+	<h2 id="Catch"><img src="images/top/catch.png" alt="自分じゃぱんつもはけない。そんな天才少女の”飼い主”になりました。"></h2>
+	<div id="OnAir"><a href="/products/"><img src="images/top/onair_off.png" class="btn" alt="Blu-ray＆DVD Vol.1 2012年1月30日 ONSALE"></a></div>
+	<h1 id="Logo"><img src="images/top/logo.png" alt="さくら荘のペットな彼女"></h1>
+	<nav id="MainNavi"><ul>
+	<li class="nv1"><a href="/news/"><img src="images/top/navi1_off.png" alt="NEWS" class="btn"></a></li>
+	<li class="nv2"><a href="/onair.html"><img src="images/top/navi2_off.png" alt="ONAIR" class="btn"></a></li>
+	<li class="nv3"><a href="/story.html"><img src="images/top/navi3_off.png" alt="STORY" class="btn"></a></li>
+	<li class="nv4"><a href="/character.html"><img src="images/top/navi4_off.png" alt="CHARACTER" class="btn"></a></li>
+	<li class="nv5"><a href="/staff.html"><img src="images/top/navi5_off.png" alt="STAFF/CAST" class="btn"></a></li>
+	<li class="nv6"><a href="/special/"><img src="images/top/navi6_off.png" alt="SPECIAL" class="btn"></a></li>
+	<li class="nv7"><a href="/products/"><img src="images/top/navi7_off.png" alt="PRODUCTS" class="btn"></a></li>
+	<li class="nv8"><a href="/link.html"><img src="images/top/navi8_off.png" alt="LINK" class="btn"></a></li>
+	</ul></nav>
+	<div id="PV"><a class="youtube" href="http://www.youtube.com/embed/RNrd4dtyUWk?rel=0&amp;wmode=transparent"><img src="episode/top_thumb_off.png" class="btn"></a></div>
+	<!--<div id="PV"><a class="pvcb2" href="/pv2.html?file=sakurasou_pv_ps.mp4&dw=920&dh=518"><img src="images/top/pv_game_off.png" alt="原作・アニメ・ゲーム公式サイト連動「さくら荘のペットな彼女」ゲーム発売記念バレンタインムービー　配信開始！" class="btn"></a></div>-->
+	<!--<div id="Badge">
+		<a href="news/archives/121229_comicket83.html" ><img src="news/assets/121229_c83_animeguide_badge.png"></a>
+	</div>-->
+	
+</div></header>
+<!-- ** header ** -->
+<!-- ** #wrap ** -->
+<div id="Wrap"><div class="frame_sec clearfix">
+<!-- *** article *** -->
+<article>
+	<section id="WhatsNew">
+		<h3 class="top"><img src="images/top/whatsnewTop.png" alt="WHAT'S NEW"></h3>
+		<div class="container"><ul><li>更新情報を読み込み中...</li></ul><br></div>
+		<div class="bottom"><img src="images/top/whatsnewBottom.png" alt=""></div>
+	</section>
+</article>
+<!-- *** /article *** -->
+<!-- *** aside *** -->
+<aside>
+	<div id="TopBanner">
+	<ul>
+	<li><a href="http://d-game.dengeki.com/sakurasou/" target="_blank" rel="noopener noreferrer"><img src="/images/common/banner_game.png" alt="ゲーム「さくら荘のペットな彼女」1月24日発売予定"></a></li>
+	<!--<li class="half"><a href="/special/archives/event_dengeki20th.html"><img src="images/common/banner_dengeki20th.png" alt="電撃20年祭"></a></li>
+	<li class="half"><a href="/special/archives/event_dengekiaut2012.html"><img src="images/common/banner_dengekiAutumn.png" alt="電撃文庫秋の祭典2012"></a></li>-->
+	<li><a href="/special/index.html#radio"><img src="images/common/banner_radio.png" alt="さくら荘のペットなラジオ"></a></li>
+	<li><img src="images/common/banner_dramacd-vol1.jpg" alt="さくら荘のペットな彼女ドラマCD"></li>
+	<li><a href="http://sakurasou.dengeki.com/" target="_blank" rel="noopener noreferrer"><img src="images/common/banner_gensaku.png" alt="さくら荘のペットな彼女原作公式サイト"></a></li>
+	<li><a href="http://sakurasou.dengeki.com/books" target="_blank" rel="noopener noreferrer"><img src="images/common/banner_novel.png" alt="電撃文庫さくら荘のペットな彼女8巻"></a></li>
+	<li><a href="http://sakurasou.dengeki.com/books" target="_blank" rel="noopener noreferrer"><img src="images/common/banner_comic.png" alt="電撃コミックさくら荘のペットな彼女3巻"></a></li>
+	</ul>
+	</div>
+</aside>
+<!-- *** /aside *** -->
+</div></div>
+<!-- ** /#wrap ** -->
+<!-- ** footer ** -->
+<footer><div class="frame_sec"><div class="container clearfix">
+	<div id="Copyright">&copy; 鴨志田一/アスキー・メディアワークス/さくら荘製作委員会</div>
+	<div id="TwitterBtn"><a href="http://twitter.com/#!/sakurasou_tv" target="_blank" rel="noopener noreferrer">Twitter</a></div>
+</div></div></footer>
+<!-- ** /footer ** -->
+</div>
+<!-- * /foreground * -->
+<script type="text/javascript" src="./js/main.js"></script>
+<script type="text/javascript" src="./js/top.js"></script>
+<script type="text/javascript" src="./js/ga_track.js"></script>
+<!--<script src="http://twitter.com/statuses/user_timeline/sakurasou_tv.json?callback=twitterCallback2&count=5" type="text/javascript"></script>-->
+<!--<script src="https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=sakurasou_tv&callback=twitterCallback2&count=5" type="text/javascript"></script>-->
+</body>
+</html>

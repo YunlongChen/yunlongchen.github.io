@@ -1,0 +1,297 @@
+@charset "utf-8";
+
+/* ---- css reset ---- */
+@import url(reset.css);
+@import url(base.css);
+/* ---- Structure ---- */
+body{ margin: 0; padding: 0; }
+#Background,
+#Foreground,
+header,
+#Wrap,
+footer{ width:100%; margin: 0;}
+.frame_pri{ max-width: 1200px; margin: 0 auto; min-width: 1000px\9;/* ie8以下 */ }
+.frame_sec{ max-width: 1000px; margin: 0 auto; width:1000px\9;/* ie8以下 */ }
+article{ width:100%; margin: 0 auto; }
+.col2 article{ width: 68%; float: left; }
+aside{ width: 32%; float: right; }
+#SubCol{ width: 32%; float: right; }
+/* 深度と位置 設定 */
+#Background{ height:100%; position: absolute; top:0; left: 0; z-index: 0; }
+#Background .layer1{ width:100%; height:100%; position: absolute; top:0; left: 0; z-index: 1;}
+#Background .layer2{ width:100%; height:100%; position: absolute; top:0; left: 0; z-index: 2;}
+#Background .layer3{ width:100%; height:100%; position: absolute; top:0; left: 0; z-index: 3;}
+#Foreground{ height:100%; position: absolute; top:0; left: 0; z-index: 50; }
+
+/* body */
+body{ background: url(../images/common/bg.jpg); }
+
+/* #background */
+#Background .bgPtn { height:100%; min-height:100%; background-image: url(../images/common/bgptn.png) ; }
+#Background .mainVisual{ width: 44%; padding: 0 0 0 56%; text-align: center;}
+#Background .logoUnder{ width: 60%; padding: 12% 0 0 0; float: left;  }
+
+/* Header */
+header{ margin-bottom: 1%; }
+header #Logo{ width: 33%; float:left;}
+header #Catch{ width: 22%; padding: 2% 0 0 2%; float: left;}
+header #OnAir{ width: 42%; float: right;}
+
+/* MainNavi */
+#MainNavi{ width: 60%; display: block; clear: both; }
+#MainNavi ul{ list-style-type: none; margin: 0; padding: 0; text-align: left; }
+#MainNavi ul li{ display: inline-block; margin: 0; padding: 0; /display:inline; /zoom:1; letter-spacing:normal; }
+#MainNavi .nv1{ width: 20%; padding: 0 ; }
+#MainNavi .nv2{ width: 20%; padding: 0 1%; }
+#MainNavi .nv3{ width: 20%; padding: 0 1%; }
+#MainNavi .nv4{ width: 23.4%; padding: 0 1%; }
+#MainNavi .nv5{ width: 23.4%; padding-left: 5%; }
+#MainNavi .nv6{ width: 23.4%; }
+#MainNavi .nv7{ width: 23.4%; }
+#MainNavi .nv8{ width: 20%; }
+
+#Wrap{ margin-bottom: 2%; }
+
+/* Article / Aside */
+article h3{ margin: 0; padding: 0; line-height: 0; }
+article .container{ padding: 0 4%; background-repeat: repeat-y; background-position: center top; background-size: 100%;}
+article .bottom{ margin: 0; padding: 0; line-height: 0;}
+
+article .pager{ width: 100%; padding: 1% 0; text-align: center; }
+article .pager ul{list-style-type: none; margin: 0; padding: 0; display: block;}
+article .pager ul li{list-style-type: none; margin: 0; padding: 0 ; display: inline-block; /display:inline; /zoom:1; letter-spacing:normal;}
+article .pager ul li a{ display: block; padding: 0.5em 0.6em; border: #C4B1AA dotted 1px; text-decoration: none; color: #C4B1AA;}
+article .pager ul li a:hover{ text-decoration: underline; color: #714F45;}
+article .pager ul li.back a{ background: url(../images/common/icon_lbrownArrowL.png) no-repeat left center; padding-left: 1em;}
+article .pager ul li.next a{ background: url(../images/common/icon_lbrownArrowR.png) no-repeat right center; padding-right: 1em;}
+
+article .pagetop{ text-align: right; padding: 1% 0; }
+article .pagetop a{ width: 100px; height: 0; padding-top: 23px; overflow: hidden;  background:url(../images/common/btn_pageTop.png) no-repeat; display: inline-block; /display:inline; /zoom:1; letter-spacing:normal;}
+
+aside #SubNavi{margin: 50% 0 4% 0; padding: 0; }
+aside #SubNavi h3{ margin: 0; padding: 0; line-height: 0; }
+aside #SubNavi .container{background-repeat: repeat-y; background-position: center top; background-size: 100%;}
+aside #SubNavi .container ul{ list-style-type: none; margin: 0; padding: 0 12% 1% 12%; display: block; }
+aside #SubNavi .container ul li{ display: block; margin: 0 0 2% 0; padding: 0 0 2% 0; }
+aside #SubNavi .container ul li a{ display: block; color: #C4B1AA; padding-left: 20px; background: url(../images/common/icon_lbrownCricleArrow.png) no-repeat left top; }
+aside #SubNavi .container ul li a:hover{ color: #E94630;}
+aside #SubNavi .container ul li.sub a{ padding-left: 34px; background: url(../images/common/icon_lbrownArrowR.png) no-repeat 20px top; }
+
+#SubCol{}
+#Banner{ padding: 0 6.2%; }
+#Banner ul{ display: block; list-style-type: none; margin: 0; padding: 0;}#Banner ul li{ width: 100%; padding: 0; margin: 0 0 1% 0 ; display: inline-block; /display:inline; /zoom:1; letter-spacing:normal; }
+#Banner ul li.half{ width: 48.3%; }
+
+/* Footer */
+footer{ text-align: center; }
+footer .container{ padding: 10px 0; background: url(../images/common/line_brownDotted.png) no-repeat center top; }
+footer #Copyright{ height: 20px; font-size: 10px; font-size: 1.0rem; line-height: 20px; display: inline-block; /display:inline; /zoom:1; letter-spacing:normal;}
+footer #TwitterBtn,
+footer #FacebookBtn{ width: 88px; height: 20px; display: inline-block; /display:inline; /zoom:1; letter-spacing:normal; }
+footer #TwitterBtn a,
+footer #FacebookBtn a{ width: 88px; height: 0; padding-top: 20px; overflow: hidden; background-repeat: no-repeat; display: block;}
+footer #TwitterBtn a{ background-image: url(../images/common/btn_twitter.png) ;}
+footer #FacebookBtn a{ background-image: url(../images/common/btn_facebook.png) ;}
+
+/* #Page_News */
+#Page_News article .container{ background-image:url(../images/news/maincolMiddle.png); }
+#Page_News article .headline{ margin: 0 0 2% 0; padding: 0 0 2% 0; line-height: 1.2; background:url(../images/common/line_brownSolid.png) no-repeat left bottom; }
+#Page_News article .headline .date{ font-size: 12px; font-size: 1.2rem; color:#714F45; padding-left: 20px;}
+#Page_News article .headline h4{ margin: 1% 0; padding: 0; color: #714F45;}
+#Page_News article .headline h4 span{ display: block;padding-left: 20px; }
+#Page_News article .headline h4 a span{ display: block; padding-left: 20px; background: url(../images/common/icon_pinkCricleArrow.png) no-repeat left top; }
+#Page_News article .headline .desc{padding-left: 20px;}
+#Page_News article .entry{}
+#Page_News article .entry .date{ color:#C4B1AA; margin-bottom: 1%; }
+#Page_News article .entry h4{ margin: 0 0 1% 0; padding: 0 0 1% 0; color: #E95098; background:url(../images/common/line_brownSolid.png) no-repeat left bottom; }
+#Page_News article .entry .entrybody{  line-height: 1.4;}
+#Page_News #SubNavi .container{ background-image:url(../images/news/subcolMiddle.png);}
+#Page_News #SubNavi .top,
+#Page_News #SubNavi .container,
+#Page_News #SubNavi .bottom{ display: none; }
+
+/* #Page_Onair */
+#Page_Onair article .container{ background-image:url(../images/onair/maincolMiddle.png); }
+#Page_Onair article .entry{ line-height: 1.4; }
+#Page_Onair article .entry h4{ margin: 0 0 0 0; padding: 0 0 1% 0; color: #B979B1; }
+#Page_Onair article .entry .table1,
+#Page_Onair article .entry .table1 th,
+#Page_Onair article .entry .table1 td { border-color: #B979B1; }
+
+/* #Page_Story */
+#Page_Story article .top{ width: 68%; }
+#Page_Story article #SubNavi{ width: 68%; }
+#Page_Story article #SubNavi ul{ margin: 0; padding: 0; display: block; list-style-type: none; padding: 2em 0 1em 0; }
+#Page_Story article #SubNavi ul li{ width: 47%;  margin: 0; padding: 0 1.5%; display: block; float: left; text-align: center; }
+#Page_Story article .intro_stage{ position: relative; height: 533px; }
+#Page_Story article .intro_stage .layer1{ position: absolute; z-index: 1; width: 100%;}
+#Page_Story article .intro_stage .layer2{ position: absolute; z-index: 2; width: 100%;}
+#Page_Story article .episode_stage{ background: url(../images/story/episode_bg.jpg) repeat-y left top; border: #E7F7B7 solid 5px; }
+#Page_Story article .episode_stage .main{ width: 66.5%; float: left;}
+#Page_Story article .episode_stage .sub{ width: 32.5%; float: right;}
+#Page_Story article .episode_stage .main .title{ background:url(../images/story/ttl_episode.png) no-repeat left top; }
+#Page_Story article .episode_stage .main .title h4{  font-size: 24px; font-size: 2.4rem; line-height: 1.2em; text-align: center; padding: 1.2em 0; }
+#Page_Story article .episode_stage .main .staff{ color: #714C43; width: 85%; margin: 0 auto; padding: 1% 0; font-size: 12px; font-size: 1.2rem; line-height: 1.4; text-align: center; background:url(../images/common/line_brownSolid.png) no-repeat left top; }
+#Page_Story article .episode_stage .main .sceneImage{ width: 490px; margin: 0 auto; }
+#Page_Story article .episode_stage .main .sceneImage ul{ margin: 0; padding: 0; display: block; list-style-type: none;}
+#Page_Story article .episode_stage .main .sceneImage ul li{ display: block; }
+#Page_Story article .episode_stage .main .sceneImage img{ border: #FBF8F0 solid 5px;}
+#Page_Story article .episode_stage .main .eptext{ width: 85%; margin: 0 auto; padding: 1% 0; font-size: 16px; font-size: 1.6rem; line-height: 1.5; margin-bottom: 2em;}
+#Page_Story article .episode_stage .main .nextep_title{ text-align: center; margin-bottom: 0.5em; }
+#Page_Story article .episode_stage .main .nextep{ display: block; width: 85%; margin: 0 auto 1em auto; padding: 1%; border: #E7F7B7 solid 5px; background: #FFF; }
+#Page_Story article .episode_stage .main .nextep .thumb{ width: 43%; margin-right: 2%; float: left; }
+#Page_Story article .episode_stage .main .nextep .linktext{ width: 50%; float: left; padding: 1% 0 0 0; }
+#Page_Story article .episode_stage .main .nextep .linktext span{ display: block; padding-left: 20px; background: url(../images/common/icon_pinkCricleArrow.png) no-repeat left top; }
+#Page_Story article .episode_stage .sub .eachep_title{ text-align: center; margin-bottom: 0.5em; display: none; }
+#Page_Story article .episode_stage .sub ul{ margin: 0; padding: 0; display: block; list-style-type: none; padding: 1em 0 1em 0; }
+#Page_Story article .episode_stage .sub ul li{ display: block;}
+#Page_Story article .episode_stage .sub ul li a{ display: block;}
+#Page_Story article .episode_stage .sub ul li .thumb{ width: 20%; margin-right: 3%; float: left; }
+#Page_Story article .episode_stage .sub ul li .thumb img{ border: #FD74B8 solid 2px;}
+#Page_Story article .episode_stage .sub ul li a:hover .thumb img{ border: #E94630 solid 2px;}
+#Page_Story article .episode_stage .sub ul li .linktext{ width: 75%; float: left; padding: 1% 0 0 0; }
+#Page_Story article .episode_stage .sub ul li .linktext span{ display: block; padding-left: 16px; background: url(../images/common/icon_pinkCricleArrow.png) no-repeat left top; }
+
+/* #Page_Character */
+#Page_Character article .top{ width: 68%; }
+#Page_Character article #SubNavi{ padding:1em 0 0 0 ;}
+#Page_Character article #SubNavi ul{ margin: 0; padding: 0; display: block; list-style-type: none; padding: 1em 0 1em 0; text-align: center; background: url(../images/common/bg_w70.png); border: #F2F2E5 solid 6px; }
+#Page_Character article #SubNavi ul li{ width: 14.2%;  margin: 0; padding: 0 ; display: inline-block; /display:inline; /zoom:1; letter-spacing:normal; vertical-align: top;}
+
+/* #Page_Staff */
+#Page_Staff article .container{ background-image:url(../images/staff/maincolMiddle.png); }
+#Page_Staff article .entry{ line-height: 1.4;}
+#Page_Staff article .entry h4{ margin: 0 0 1% 0; text-align: center; }
+#Page_Staff article .entry .list2{ max-width: 560px;}
+#Page_Staff article .entry .list2,
+#Page_Staff article .entry .list2 li{ border-color: #C4B1AA; }
+#Page_Staff article .entry ul li .t1{ width: 25%; color: #E95098; font-size: 0.9em; padding-right: 5%; text-align: right; background: url(../images/staff/icon_sakura.png) no-repeat right 2px; display: inline-block; /display:inline; /zoom:1; letter-spacing:normal; vertical-align: top;}
+#Page_Staff article .entry ul li .t2{ width: 65%; padding-left: 2%; display: inline-block; /display:inline; /zoom:1; letter-spacing:normal; vertical-align: top;}
+
+/* #Page_Special */
+#Page_Special article .container{ background-image:url(../images/special/maincolMiddle.png); }
+#Page_Special article h4{ text-align: center; }
+#Page_Special article h5{font-size: 16px; font-size: 1.6rem;  color: #66CCCC; border-bottom: #66CCCC dotted 1px; padding: 2% 0 0 0; margin: 0 0 1% 0;}
+#Page_Special article h6{ font-size: 14px; font-size: 1.4rem; color: #714F43; padding: 2% 0 2% 0; margin: 0 0 2% 0; background:url(../images/common/line_brownSolid.png) no-repeat left bottom;}
+#Page_Special article h6 a span{ display: block; padding-left: 20px; background: url(../images/common/icon_pinkCricleArrow.png) no-repeat left top; }
+#Page_Special article .frame1{ border-color: #F7EACD; }
+#Page_Special article .entry{}
+#Page_Special article .entry .entryimage{ text-align: center; padding: 1%; }
+#Page_Special article .entry .entrybody{ line-height: 1.4;}
+#Page_Special article .entry .release{ color:#E95098;  }
+#Page_Special article .entry .specsheet{ font-size: 12px; font-size: 1.2rem; padding: 2%; border: #FFF none 0px; }
+#Page_Special article .entry .specsheet li{ margin: 0 0 0.5% 0; padding: 0.5% 0; display: block; border-color: #C4B1AA;  line-height: 1.4; }
+#Page_Special article .entry .specsheet b.hd{ color: #C4B1AA; }
+#Page_Special #SubNavi .container{ background-image:url(../images/special/subcolMiddle.png);}
+
+/* #Page_Products */
+#Page_Products article .container{ background-image:url(../images/products/maincolMiddle.png); }
+#Page_Products article h4{ text-align: center; }
+#Page_Products article h5{font-size: 16px; font-size: 1.6rem;  color: #66CCCC; border-bottom: #66CCCC dotted 1px; padding: 2% 0 0 0; margin: 0 0 1% 0;}
+#Page_Products article h6{ font-size: 14px; font-size: 1.4rem; color: #714F43; padding: 2% 0 2% 0; margin: 0 0 2% 0; background:url(../images/common/line_brownSolid.png) no-repeat left bottom;}
+#Page_Products article .frame1{ border-color: #D1ECE8; }
+#Page_Products article .entry{}
+#Page_Products article .entry .entryimage{ text-align: center; padding: 1%; }
+#Page_Products article .entry .entrybody{ line-height: 1.4;}
+#Page_Products article .entry .release{ color:#E95098;  }
+#Page_Products article .entry .specsheet{ font-size: 12px; font-size: 1.2rem; padding: 2%; border: #FFF none 0px; }
+#Page_Products article .entry .specsheet li{ margin: 0 0 0.5% 0; padding: 0.5% 0; display: block; border-color: #C4B1AA;  line-height: 1.4; }
+#Page_Products article .entry .specsheet b.hd{ color: #C4B1AA; }
+#Page_Products #SubNavi .container{ background-image:url(../images/products/subcolMiddle.png);}
+#Page_Products #videoPager ul {margin: 0.5em 0;padding: 0;text-align: center;}
+#Page_Products #videoPager ul li {list-style: none; display: inline-block; margin: 0 5px 5px 0; padding: 0; font-weight: bold;}
+#Page_Products #videoPager ul li a {display: block;padding: 0.5em 0.9em; border: 1px #E95098 solid;}
+#Page_Products #videoPager ul li a:link,
+#Page_Products #videoPager ul li a:visited {border-color: #E95098;}
+#Page_Products #videoPager ul li a:hover,
+#Page_Products #videoPager ul li a:active {border-color: #E95098;background-color: #E95098;color: #FFF;}
+#Page_Products #tokutenList{ list-style-type: none; display: block; margin: 0; padding: 0; }
+#Page_Products #tokutenList li{ width:185px; margin: 0 5px 5px 0; padding:0; display:inline-block; vertical-align: top; /display:inline; /zoom:1; letter-spacing:normal; border: #DBC7A8 solid 1px;}
+#Page_Products #tokutenList li div{font-size: 11px; font-size: 1.1rem; line-height: 1.2; padding: 3px 3px; border-bottom: #DBC7A8 dotted 1px;}
+#Page_Products #tokutenList li .thumb{  text-align: center;}
+#Page_Products #tokutenList li .tenpo{ padding-left: 25px; background:url(../images/products/tokuten_tenpo.png) no-repeat 3px center;}
+#Page_Products #tokutenList li .jyouken{ padding-left: 25px; background:url(../images/products/tokuten_jyouken.png) no-repeat 3px center;}
+#Page_Products #tokutenList li .jiki{ padding-left: 25px; background:url(../images/products/tokuten_jiki.png) no-repeat 3px center; }
+#Page_Products #tokutenList li .naiyou{ padding-left: 25px; background:url(../images/products/tokuten_naiyou.png) no-repeat 3px center; color:#E95098; border-bottom: #FFF none 1px; }
+
+
+/* #Page_Link */
+#Page_Link article .container{ background-image:url(../images/link/maincolMiddle.png); }
+#Page_Link article .entry{ line-height: 1.4; }
+#Page_Link article .entry .list1{ max-width: 500px;}
+#Page_Link article .entry .list1,
+#Page_Link article .entry .list1 li{ background-image: url(../images/common/line_pblueSolid.png); }
+#Page_Link article .entry .list1 li a{ display: block; text-decoration: none; color: #714F45; }
+#Page_Link article .entry .list1 li a:hover{ text-decoration: underline; color: #E94630;}
+#Page_Link article .entry .frame1{border-color: #E5EAF8;}
+/* Mediaqueries */
+/* PC(768~1200px) ============================================================= */
+@media screen and (max-width: 1200px) {
+
+}
+/* Tablet(Landscape) =================================================================== */
+@media screen and (max-width: 768px) {
+/* #Page_Story */
+#Page_Story article .intro_stage{ height: 410px; }
+}
+/* Smartphone(Landscape) ============================================================== */
+@media screen and (max-width: 480px) {
+.col2 article,
+aside,
+#SubCol{ width: 100%; float: none; }
+#MainNavi .nv1{ width: 31%; padding: 0 ; }
+#MainNavi .nv2{ width: 31%; padding: 0 ; }
+#MainNavi .nv3{ width: 31%; padding: 0 ; }
+#MainNavi .nv4{ width: 33.4%; padding: 0 3% 0 12%; }
+#MainNavi .nv5{ width: 33.4%; padding-left: 0%; }
+#MainNavi .nv6{ width: 32.4%; }
+#MainNavi .nv7{ width: 32.4%; }
+#MainNavi .nv8{ width: 30%; }
+
+aside #SubNavi{margin: 3% 0 3% 0; padding: 0; }
+aside #SubNavi h3,
+aside #SubNavi .bottom{display: none; }
+aside #SubNavi .container{ padding: 0 2% 1% 2%;}
+aside #SubNavi .container ul{ padding: 3% 3% 1% 3%; display: block; border: #C4B1AA dotted 1px; background-color: #FFF; -moz-border-radius: 0.5em; border-radius: 1em; }
+aside #SubNavi .container ul li{ display: inline; margin: 0; padding: 0; }
+aside #SubNavi .container ul li a{ display: inline; padding: 0; background: none; }
+aside #SubNavi .container ul li a:hover{}
+aside #SubNavi .container ul li.sub a{ padding:0; background: none; }
+
+aside #SubNavi .container ul li a{ margin-bottom: 0.4em; padding: 0.5em 0.8em; font-size: 0.8em; background-color: #D1C2BB; color: #FFF; font-weight: bold; text-decoration: none; display:inline-block; /display:inline; /zoom:1; letter-spacing:normal; -moz-border-radius: 0.5em; border-radius: 0.5em; behavior: url(/lib/PIE.htc);/*for IE*/}
+aside #SubNavi .container ul li a:hover{  color: #FFF; background-color: #FD74B8;}
+
+aside #SubNavi .container ul li.sub a{ margin-bottom: 0.4em; padding: 0.5em 0.8em; font-size: 0.8em; background-color: #D1C2BB; color: #FFF; font-weight: bold; text-decoration: none; display:inline-block; /display:inline; /zoom:1; letter-spacing:normal; -moz-border-radius: 0.5em; border-radius: 0.5em; behavior: url(/lib/PIE.htc);/*for IE*/}
+aside #SubNavi .container ul li.sub a:hover{  color: #FFF; background-color: #FD74B8;}
+
+#Banner{ display: none; }
+
+/* #Page_Story */
+#Page_Story article .top{ width: 100%; }
+#Page_Story article #SubNavi{ width: 100%; }
+#Page_Story article #SubNavi ul{ padding: 1em 0 0.5em 0; }
+#Page_Story article .intro_stage{ height: 256px; }
+#Page_Story article .episode_stage .main{ width: 100%; float: none;}
+#Page_Story article .episode_stage .sub{ width: 96%; float: none; margin: 0 auto;}
+#Page_Story article .episode_stage .main .title{ background-size: 20%; }
+#Page_Story article .episode_stage .main .title h4{  font-size: 16px; font-size: 1.6rem; padding: 1.2em 0; }
+#Page_Story article .episode_stage .main .sceneImage{ width: 250px; margin: 0 auto; }
+#Page_Story article .episode_stage .main .nextep .thumb{ width: 33%;  }
+#Page_Story article .episode_stage .main .nextep .linktext{ width: 60%; }
+#Page_Story article .episode_stage .sub .eachep_title{ display: block; }
+/* #Page_Character */
+#Page_Character article .top{ width: 100%; }
+#Page_Character article #SubNavi{ padding:0.5em 0 0 0 ;}
+/* #Page_Special */
+#Page_Special #SubNavi .container{ background-image:none;}
+/* #Page_Products */
+#Page_Products #SubNavi .container{ background-image:none;}
+}
+/* Smartphone(Portrait) =============================================================== */
+@media screen and (max-width: 320px) {
+/* #Page_Story */
+#Page_Story article .intro_stage{ height: 171px; }
+}
+
+/* for animation */
+#Background .mainVisual img,header #OnAir img,#Background .bgPtn{ display: none;}

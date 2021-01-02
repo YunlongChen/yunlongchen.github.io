@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+/* ---- css reset ---- */
+@import url(reset.css);
+@import url(base.css);
+/* ---- Structure ---- */
+#Background,
+#Foreground,
+header,
+#Wrap,
+footer{ width:100%; margin: 0;}
+.frame_pri{ max-width: 1200px; margin: 0 auto; min-width: 1000px\9;/* ie8以下 */ }
+.frame_sec{ max-width: 1000px; margin: 0 auto; width:1000px\9;/* ie8以下 */ }
+article{ width:100%; margin: 0 auto; }
+.col2 article{ width: 40%; float: left; }
+aside{ width: 60%; float: right; }
+
+/* 深度設定 */
+#Background{ height:100%; position: absolute; top:0; left: 0; z-index: 0; }
+#Background .layer1{ width:100%; height:100%; position: absolute; top:0; left: 0; z-index: 1;}
+#Background .layer2{ width:100%; height:100%; position: absolute; top:0; left: 0; z-index: 2;}
+#Foreground{ height:100%; position: absolute; top:0; left: 0; z-index: 50; }
+/* body */
+body{ background: url(../images/common/bg.jpg); }
+
+/* #background */
+#Background .bgPtn{ height:100%; min-height:100%; background-image: url(../images/common/bgptn.png) ; }
+#Background .mainVisual{ width: 66%; padding: 0 0 0 34%; text-align: right; }
+
+/* Twitter */
+#Twitter{ width: 100%; background: url(../images/top/twitter_bg.png); }
+#Twitter h3{ width: 20%; float: left; margin: 0; padding: 0; }
+#Twitter .flwBtn{ width: 9%; float: right; display: block; margin: 0; padding: 0; }
+#Twitter .marquee{ width: 71%; height: 30px; list-style-type: none; display: block; margin: 0; padding: 0; position: relative; overflow: hidden; }
+#Twitter .marquee li{ font-size: 12px; font-size: 1.2rem; height: 30px; line-height: 30px; display: block; margin: 0; padding:0; position: absolute; top: -999em; left: 0; white-space: nowrap; }
+
+/* Header */
+header{ margin-bottom: 1%; }
+header #Catch{ width: 30%; padding: 0 0 0 5%; float: left;}
+header #OnAir{ width: 65%; float: right;}
+header #Logo{ width: 42%; clear:both;}
+header #PV{ width: 35%; padding: 0 0 0 3%; float: left;}
+header #Badge{ width: 16%; padding: 1% 0 0 1%; float: left;}
+
+/* MainNavi */
+#MainNavi{ width: 42%; display: block; }
+#MainNavi ul{ list-style-type: none; margin: 0; padding: 0; text-align: center; }
+#MainNavi ul li{ display: inline-block; margin: 0; padding: 0; /display:inline; /zoom:1; letter-spacing:normal; }
+#MainNavi .nv1{ width: 26%; }
+#MainNavi .nv2{ width: 26%; }
+#MainNavi .nv3{ width: 28%; }
+#MainNavi .nv4{ width: 32%; }
+#MainNavi .nv5{ width: 34%; }
+#MainNavi .nv6{ width: 31%; }
+#MainNavi .nv7{ width: 32%; }
+#MainNavi .nv8{ width: 25%; }
+
+#Wrap{ margin-bottom: 2%; }
+
+/* Article / Aside */
+#WhatsNew{ width: 100%; line-height: 1.2; }
+#WhatsNew h3{ margin: 0; padding: 0; line-height: 0; }
+#WhatsNew .container{ background-image:url(../images/top/whatsnewMiddle.png); background-repeat: repeat-y; background-position: center top; background-size: contain; }
+#WhatsNew .container ul{ list-style-type: none; margin: 0; padding: 0 7% 5% 7%; display: block; }
+#WhatsNew .container ul li{ font-size: 12px; font-size: 1.2rem; display: block; margin: 0; padding: 2% 0 2% 0; background:url(../images/common/line_brownSolid.png) no-repeat left bottom;  }
+#WhatsNew .container ul li .date{ color:#714F45; padding-left: 20px;}
+#WhatsNew .container ul li span{ display: block; padding-left: 20px;}
+#WhatsNew .container ul li a span{ background: url(../images/common/icon_pinkCricleArrow.png) no-repeat left top; }
+
+#TopBanner{ width: 100%; padding-top: 8%; }
+#TopBanner ul{ display: block; list-style-type: none; margin: 0; padding: 0;}#TopBanner ul li{ width: 46.7%; padding: 0; margin: 2% 0 0 2% ; display: inline-block; /display:inline; /zoom:1; letter-spacing:normal; }
+#TopBanner ul li.half{ width: 22.5%; padding: 2% 0 0 1.5%; margin:0; }
+/* Footer */
+footer{ text-align: center; }
+footer .container{ padding: 10px 0; background: url(../images/common/line_brownDotted.png) no-repeat center top; }
+footer #Copyright{ height: 20px; font-size: 10px; font-size: 1.0rem; line-height: 20px; display: inline-block; /display:inline; /zoom:1; letter-spacing:normal;}
+footer #TwitterBtn,
+footer #FacebookBtn{ width: 88px; height: 20px; display: inline-block; /display:inline; /zoom:1; letter-spacing:normal; }
+footer #TwitterBtn a,
+footer #FacebookBtn a{ width: 88px; height: 0; padding-top: 20px; overflow: hidden; background-repeat: no-repeat; display: block;}
+footer #TwitterBtn a{ background-image: url(../images/common/btn_twitter.png) ;}
+footer #FacebookBtn a{ background-image: url(../images/common/btn_facebook.png) ;}
+
+/* Mediaqueries */
+/* PC(768~1200px) ============================================================= */
+@media screen and (max-width: 1200px) {
+
+}
+/* Tablet(Landscape) =================================================================== */
+@media screen and (max-width: 768px) {
+#Twitter h3{display: none;}
+#Twitter .flwBtn{ width: 12.5%;  }
+#Twitter .marquee{ width: 87%;  }
+}
+/* Smartphone(Landscape) ============================================================== */
+@media screen and (max-width: 480px) {
+#Background .layer2{top:30px;}
+.col2 article{ width: 100%; padding: 0 0; float: none; }
+aside{ width: 100%; padding: 0 0; float: none; }
+#Twitter .flwBtn{ width: 20%;  }
+#Twitter .marquee{ width: 80%;  }
+#WhatsNew h3 img,
+#WhatsNew .bottom img{ width: 100%; }
+#TopBanner{ padding-top: 2%; }
+}
+/* Smartphone(Portrait) =============================================================== */
+@media screen and (max-width: 320px) {
+#Twitter .flwBtn{ width: 27%;  }
+#Twitter .marquee{ width: 73%;  }
+}
+
